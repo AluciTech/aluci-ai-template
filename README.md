@@ -1,4 +1,4 @@
-# Aluci's Python Project Template
+# Aluci's AI Project Template
 
 ## Overview
 
@@ -7,7 +7,7 @@ This repository provides a reusable template for creating python projects that f
 ## Setup
 
 > [!NOTE]
-> To streamline your Python project setup, we've provided a `setup.sh` script that automatically creates a virtual environment and installs all required dependencies. The script supports several command-line options, allowing you to tailor the setup to your specific needs. You can also customize the script itself as needed.
+> To streamline your AI project setup, we've provided a `setup.sh` script that automatically creates a virtual environment and installs all required dependencies. The script supports several command-line options, allowing you to tailor the setup to your specific needs. You can also customize the script itself as needed.
 >
 > To explore available options, run:
 > `./setup.sh --help`
@@ -17,13 +17,13 @@ This repository provides a reusable template for creating python projects that f
 ### Recommended Setup (using Miniconda)
 
 ```bash
-./setup.sh --env-name ProjectEnv --python-version 3.10
+./setup.sh --env-name AIProjectEnv --python-version 3.10
 ```
 
 ### Venv
 
 ```bash
-./setup.sh --env-name ProjectEnv --python-version 3.10 --venv
+./setup.sh --env-name AIProjectEnv --python-version 3.10 --venv
 ```
 
 ## README Template
