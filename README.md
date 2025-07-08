@@ -69,6 +69,11 @@ Always include a usage section, even if it's just a single command.
 This project is licensed under the Apache License (Version 2.0).
 
 See the [LICENSE](LICENSE) file for details.
+
+## AI Usage Transparency
+
+This project occasionally uses AI tools such as ChatGPT to assist with development.
+For more details, see [AI_USAGE.md](./AI_USAGE.md).
 ````
 
 ## License
@@ -76,3 +81,8 @@ See the [LICENSE](LICENSE) file for details.
 This project is licensed under the Apache License (Version 2.0).
 
 See the [LICENSE](LICENSE) file for details.
+
+## GenAI Usage Transparency
+
+This project occasionally uses GenAI tools such as ChatGPT to assist with development.
+For more details, see [AI_USAGE.md](./AI_USAGE.md).
