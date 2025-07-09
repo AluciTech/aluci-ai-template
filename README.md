@@ -82,7 +82,7 @@ This project is licensed under the Apache License (Version 2.0).
 
 See the [LICENSE](LICENSE) file for details.
 
-## GenAI Usage Transparency
+## AI Usage Transparency
 
-This project occasionally uses GenAI tools such as ChatGPT to assist with development.
+This project occasionally uses AI tools such as ChatGPT to assist with development.
 For more details, see [AI_USAGE.md](./AI_USAGE.md).
