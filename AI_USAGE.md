@@ -6,7 +6,7 @@ In the interest of transparency, we would like to inform users and contributors 
 
 We have used the following AI tools:
 
-- OpenAI ChatGPT
+- OpenAI Codex
 - GitHub Copilot
 
 ## Use Cases

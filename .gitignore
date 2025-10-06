@@ -192,3 +192,11 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Project related
+/data
+/logs
+/models
+
+# PUSH CONFIGURATION FILE AT YOUR OWN RISKS
+/src/configs/*.yaml

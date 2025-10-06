@@ -1,0 +1,8 @@
+model_params:
+  model_id: HuggingFaceTB/SmolLM3-3B
+  tokenizer_class: transformers.AutoTokenizer
+  model_class: transformers.AutoModelForCausalLM
+  dtype: bfloat16
+  trust_remote_code: true
+  device_map: auto
+  low_cpu_mem_usage: true

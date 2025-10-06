@@ -1,0 +1,12 @@
+logs:
+  _target_: schemas.log_schema.LogSchema
+  sink: ${path_config:run_log}
+  level: INFO
+  format: "{time:YYYY-MM-DD HH:mm:ss.SSS} | {level} | {thread.name} | {name}:{function}:{line} - {message}"
+  rotation: 10 MB
+  retention: 7 days
+  colorize: true
+
+model:
+  _target_: models.mlp.mlp_model.MLPModel # or
+  # _target_: models.smol_lm3.smol_lm3_model.SmolLM3Model

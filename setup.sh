@@ -7,7 +7,7 @@
 # Description:
 #   Bootstraps a Python project directory by:
 #     - Installing Miniconda (unless --venv is used)
-#     - Creating & activating a Python 3.10+ Conda or venv environment
+#     - Creating & activating a Python 3.11+ Conda or venv environment
 #     - Installing Poetry
 #     - Installing project dependencies
 #     - Installing git pre-commit hooks
@@ -19,7 +19,7 @@
 #   -h, --help                Show help and exit
 #   -d, --debug               Enable verbose mode (set -x)
 #   --env-name NAME           Name of the environment (default: pyenv)
-#   --python-version VER      Python version to use (default: 3.10)
+#   --python-version VER      Python version to use (default: 3.11)
 #   --venv                    Use python -m venv instead of Conda
 ################################################################################
 
@@ -40,7 +40,7 @@ Options:
   -h, --help                Show help and exit
   -d, --debug               Verbose mode (set -x)
   --env-name NAME           Name of the environment (default: pyenv)
-  --python-version VER      Python version (default: 3.10)
+  --python-version VER      Python version (default: 3.11)
   --venv                    Use python -m venv instead of Conda
 EOF
 }
@@ -62,7 +62,7 @@ eval set -- "$OPTS"
 
 DEBUG=false
 ENV_NAME="pyenv"
-PY_VER="3.10"
+PY_VER="3.11"
 ENV_MANAGER="conda"
 
 while true; do
