@@ -8,5 +8,4 @@ logs:
   colorize: true
 
 model:
-  _target_: models.mlp.mlp_model.MLPModel # or
-  # _target_: models.smol_lm3.smol_lm3_model.SmolLM3Model
+  _target_: models.smol_lm3.smol_lm3_model.SmolLM3Model

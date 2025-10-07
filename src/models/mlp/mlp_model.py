@@ -51,7 +51,7 @@ class MLPModel(AbstractModel):
 
     def __post_init__(self) -> None:
         self.config_dir = self.config_dir or Path(path_config.src) / "models" / "mlp"
-        self.config_name = self.config_name or "mlp_config.yaml"
+        self.config_file = self.config_file or "mlp_config.yaml"
         self.config = self._load_config()
         self.load_model()
         log(message=f"{self} initialized.", level="INFO")

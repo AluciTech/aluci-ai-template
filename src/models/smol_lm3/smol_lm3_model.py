@@ -18,7 +18,7 @@ class SmolLM3Model(AbstractHFModel):
         self.config_dir = (
             self.config_dir or Path(path_config.src) / "models" / "smol_lm3"
         )
-        self.config_name = self.config_name or "smol_lm3_config.yaml"
+        self.config_file = self.config_file or "smol_lm3_config.yaml"
         self.config = self._load_config()
         self.load_model()
         log(message=f"{self} initialized.", level="INFO")
