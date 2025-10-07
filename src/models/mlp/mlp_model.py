@@ -1,14 +1,12 @@
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
-import torch
 from torch import nn, Tensor
 
 from configs.path_config import path_config
 from decorators.error_handler import catch_errors
 from schemas.model_schema import AbstractModel
 from utils.log_utils import log
-from hydra.utils import get_class, get_method
+from hydra.utils import get_class
 
 
 class MLP(nn.Module):

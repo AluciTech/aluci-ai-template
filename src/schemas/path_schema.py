@@ -21,6 +21,8 @@ class PathSchema:
     run_log: str = os.path.join(logs, run_date, run_time)
     ## Config backup
     config_backup: str = os.path.join(run_log, "configs")
+    # TensorBoard logs
+    tensorboard: str = os.path.join(run_log, "tensorboard")
 
     # src
     src: str = os.path.join(root, "src")

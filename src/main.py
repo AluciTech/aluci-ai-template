@@ -11,7 +11,7 @@ def run(
 ):
     # Setup config and logs
     AppConfig.load(config_dir=config_dir, config_file=config_file, overrides=overrides)
-    setup_logs()
+    setup_logs(config=AppConfig.settings["logs"])
 
     # Playground
     tokenizer = AppConfig.settings["model"].tok_or_proc
