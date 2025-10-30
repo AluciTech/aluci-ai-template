@@ -17,13 +17,13 @@ This repository provides a reusable template for creating python projects that f
 ### Recommended Setup (using Miniconda)
 
 ```bash
-./setup.sh --env-name AIProjectEnv --python-version 3.11
+./setup.sh --env-name ai_project_env --python-version 3.11
 ```
 
 ### Venv
 
 ```bash
-./setup.sh --env-name AIProjectEnv --python-version 3.11 --venv
+./setup.sh --env-name ai_project_env --python-version 3.11 --venv
 ```
 
 ## README Template
