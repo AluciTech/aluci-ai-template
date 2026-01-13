@@ -1,28 +1,39 @@
-# Use of Artificial Intelligence (AI)
+# AI Transparency Disclosure
 
-In the interest of transparency, we would like to inform users and contributors that some aspects of this project were developed with the assistance of Artificial Intelligence (AI) tools.
+In the interest of transparency and to maintain the integrity of our open-source standards, this project discloses the use of Artificial Intelligence (AI) during the development process.
 
-## Tools Used
+## AI Models & Tools
 
-We have used the following AI tools:
+*Please list the models used (e.g., GPT-5.2, Claude 4.5 Sonnet, Llama 3.3, GitHub Copilot, etc.):*
 
-- OpenAI Codex
-- GitHub Copilot
+> **Models used:** [Write here...]
 
-## Use Cases
+## Areas of Involvement
 
-AI tools were used for the following purposes:
+*Please check the boxes that apply to the use of AI in this project/release:*
 
-- Generating or reviewing small code snippets
-- Writing or improving documentation and comments
-- Drafting ideas for features or software architecture
-- Refactoring or simplifying existing code
-- Creating test cases or examples
+### Code & Logic
 
-## Limitations and Human Review
+* [ ] **Code Generation:** Generating initial boilerplate or small logic snippets.
+* [ ] **Code Review & Debugging:** Identifying bugs or suggesting fixes in existing code.
+* [ ] **Refactoring:** Simplifying complex functions or improving code readability.
+* [ ] **Testing:** Generating unit tests, integration tests, or edge-case scenarios.
 
-While AI tools can boost productivity, we take the following precautions:
+### Documentation & Design
 
-- All AI-generated content is reviewed and tested by human contributors before inclusion
-- We remain aware of potential biases, hallucinations, or inaccuracies from AI-generated content
-- We ensure compliance with open-source licenses and community standards
+* [ ] **Documentation:** Writing or polishing READMEs, API docs, or inline comments.
+* [ ] **Architecture:** Drafting software design patterns or structural diagrams.
+* [ ] **Localization:** Translating comments or documentation into other languages.
+
+### Brainstorming & Research
+
+* [ ] **Idea Generation:** Exploring feature sets or solving specific logical hurdles.
+* [ ] **Research:** Summarizing technical papers or library documentation.
+
+## Human Oversight & Ethics
+
+*By checking these boxes, the contributors confirm the following standards:*
+
+* [ ] **Human-in-the-loop:** All AI-generated code and content has been manually reviewed, tested, and validated by a human contributor.
+* [ ] **License Compliance:** We have ensured that the AI output does not violate any third-party licenses or copyright standards.
+* [ ] **Responsibility:** The human authors remain fully responsible for any errors, security vulnerabilities, or biases introduced by AI tools.
