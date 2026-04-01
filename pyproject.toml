@@ -1,39 +1,58 @@
 [project]
-name = "ProjectName"
+name = "aluci-ai-template"
 version = "0.1.0"
-description = ""
-authors = [{ name = "Aluci" }]
+description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11,<4.0"
+requires-python = ">=3.12"
 dependencies = [
-    "pre-commit (>=4.2.0,<5.0.0)",
-    "pytest (>=8.4.0,<9.0.0)",
-    "torch (>=2.7.1,<3.0.0)",
-    "torchvision (>=0.22.1,<0.23.0)",
-    "torchaudio (>=2.7.1,<3.0.0)",
-    "dacite (>=1.9.2,<2.0.0)",
-    "loguru (>=0.7.3,<0.8.0)",
-    "pydantic (>=2.11.7,<3.0.0)",
-    "notebook (>=7.4.4,<8.0.0)",
-    "hydra-core (>=1.3.2,<2.0.0)",
-    "fire (>=0.7.0,<0.8.0)",
-    "ruamel-yaml (>=0.18.15,<0.19.0)",
-    "transformers (>=4.57.1,<5.0.0)",
-    "accelerate (>=1.10.1)",
-    "tensorboard (>=2.20)",
-    "matplotlib (>=3.10.6,<4.0.0)",
-    "tqdm (>=4.67.1,<5.0.0)",
+    "accelerate>=1.13.0",
+    "dacite>=1.9.2",
+    "fire>=0.7.1",
+    "hydra-core>=1.3.2",
+    "loguru>=0.7.3",
+    "matplotlib>=3.10.8",
+    "notebook>=7.5.5",
+    "pre-commit>=4.5.1",
+    "pydantic>=2.12.5",
+    "ruamel-yaml>=0.19.1",
+    "tensorboard>=2.20.0",
+    "transformers>=5.4.0",
 ]
 
-[tool.poetry]
-package-mode = false
+[project.optional-dependencies]
+amd = [
+    "torch>=2.11.0",
+    "torchvision>=0.26.0",
+    "triton-rocm>=3.6.0",
+]
 
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-ra -q"
-pythonpath = ["src"]
-testpaths = ["tests"]
+[dependency-groups]
+torch = [
+    "torch>=2.11.0",
+    "torchvision>=0.26.0",
+]
 
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+default-groups = ["torch"]
+conflicts = [
+    [
+        { group = "torch" },
+        { extra = "amd" },
+    ],
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-amd", extra = "amd" },
+]
+torchvision = [
+    { index = "pytorch-amd", extra = "amd" },
+]
+triton-rocm = [
+    { index = "pytorch-amd", extra = "amd" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-amd"
+url = "https://download.pytorch.org/whl/rocm7.2"
+explicit = true
