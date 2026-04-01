@@ -6,24 +6,16 @@ This repository provides a reusable template for creating python projects that f
 
 ## Setup
 
-> [!NOTE]
-> To streamline your AI project setup, we've provided a `setup.sh` script that automatically creates a virtual environment and installs all required dependencies. The script supports several command-line options, allowing you to tailor the setup to your specific needs. You can also customize the script itself as needed.
->
-> To explore available options, run:
-> `./setup.sh --help`
->
-> This script has been developed and thoroughly tested on **Ubuntu 22.04 LTS**, **Ubuntu 24.04 LTS**, and **Debian 12.x LTS**. While it may work on other Linux distributions, compatibility is not guaranteed.
-
-### Recommended Setup (using Miniconda)
+### Default Setup (Nvidia GPU and ARM)
 
 ```bash
-./setup.sh --env-name ai_project_env --python-version 3.11
+uv sync
 ```
 
-### Venv
+### AMD Setup
 
 ```bash
-./setup.sh --env-name ai_project_env --python-version 3.11 --venv
+uv sync --extra amd --no-group torch
 ```
 
 ## README Template
