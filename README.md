@@ -40,16 +40,17 @@ This project is a [brief description of the project]. It aims to [describe the m
 
 If there are any requirements, please list them here.
 
-### Recommended Setup (using Miniconda)
+
+### Default Setup (Nvidia GPU and ARM)
 
 ```bash
-./setup.sh --env-name MyEnv --python-version 3.11
+uv sync
 ```
 
-### Venv
+### AMD Setup
 
 ```bash
-./setup.sh --env-name MyEnv --python-version 3.11 --venv
+uv sync --extra amd --no-group torch
 ```
 
 ## Usage
