@@ -1,19 +1,20 @@
 from typing import Any, Type
+
+from hydra.utils import get_class
 from transformers import (
     AutoModel,
-    AutoTokenizer,
     PreTrainedModel,
     PreTrainedTokenizerBase,
 )
+
 from decorators.error_handler import catch_errors
 from utils.log_utils import log
-from hydra.utils import get_class
 
 
 @catch_errors()
 def get_huggingface_model(
     model_id: str,
-    tokenizer_class: str | Type[PreTrainedTokenizerBase] = AutoTokenizer,
+    tokenizer_class: str | Type[PreTrainedTokenizerBase] | None,
     model_class: str | Type[PreTrainedModel] = AutoModel,
     **hf_kwargs: Any,
 ):

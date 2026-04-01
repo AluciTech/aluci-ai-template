@@ -48,9 +48,7 @@ dependencies = [
     { name = "fire" },
     { name = "hydra-core" },
     { name = "loguru" },
-    { name = "marimo" },
     { name = "matplotlib" },
-    { name = "notebook" },
     { name = "pre-commit" },
     { name = "pydantic" },
     { name = "ruamel-yaml" },
@@ -63,6 +61,12 @@ amd = [
     { name = "torch", version = "2.11.0+rocm7.2", source = { registry = "https://download.pytorch.org/whl/rocm7.2" } },
     { name = "torchvision", version = "0.26.0+rocm7.2", source = { registry = "https://download.pytorch.org/whl/rocm7.2" } },
     { name = "triton-rocm" },
+]
+marimo = [
+    { name = "marimo" },
+]
+notebook = [
+    { name = "notebook" },
 ]
 
 [package.dev-dependencies]
@@ -78,9 +82,9 @@ requires-dist = [
     { name = "fire", specifier = ">=0.7.1" },
     { name = "hydra-core", specifier = ">=1.3.2" },
     { name = "loguru", specifier = ">=0.7.3" },
-    { name = "marimo", specifier = ">=0.21.1" },
+    { name = "marimo", marker = "extra == 'marimo'", specifier = ">=0.22.0" },
     { name = "matplotlib", specifier = ">=3.10.8" },
-    { name = "notebook", specifier = ">=7.5.5" },
+    { name = "notebook", marker = "extra == 'notebook'", specifier = ">=7.5.5" },
     { name = "pre-commit", specifier = ">=4.5.1" },
     { name = "pydantic", specifier = ">=2.12.5" },
     { name = "ruamel-yaml", specifier = ">=0.19.1" },
@@ -90,7 +94,7 @@ requires-dist = [
     { name = "transformers", specifier = ">=5.4.0" },
     { name = "triton-rocm", marker = "extra == 'amd'", specifier = ">=3.6.0", index = "https://download.pytorch.org/whl/rocm7.2", conflict = { package = "aluci-ai-template", extra = "amd" } },
 ]
-provides-extras = ["amd"]
+provides-extras = ["amd", "marimo", "notebook"]
 
 [package.metadata.requires-dev]
 torch = [

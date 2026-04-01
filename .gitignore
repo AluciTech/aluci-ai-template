@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
+*.pyo
 *.py[cod]
 *$py.class
 
@@ -77,6 +79,9 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Marimo
+__marimo__/
 
 # IPython
 profile_default/
